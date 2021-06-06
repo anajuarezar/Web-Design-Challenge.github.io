@@ -26,9 +26,9 @@ h1 {
 
   h3 {
     text-align: center;
-    padding: 30px 0;
-    margin: 30px;
+    margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 70px;
     color: #16A085 ;
     font-family: Georgia, serif;
     font-size: 25px;
@@ -45,11 +45,6 @@ h1 {
     font-family: Arial, sans-serif;
   }
 
-  #nav-select {
-    visibility: hidden;
-    background-color: #16A085
-  }
-
   #Summary {
       background-color: #FFFFFF;
       font-family: Arial, sans-serif;
@@ -57,7 +52,7 @@ h1 {
       margin: 30px;
       padding-bottom: 30px;
       padding-left: 30px;
-      padding-right: 30px
+      padding-right: 30px;
  }
   #lat-graph {
     width: 250px;
@@ -71,37 +66,27 @@ h1 {
     margin: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-    padding-right: 30px
+    padding-right: 30px;
   }
 
   #temp-graph {
       width: 150px;
-      height: 150px;
-      top: 200px;
-      right: 340px;   
+      height: 150px; 
   }
 
   #hum-graph {
       width: 150px;
-      height: 150px;
-      top: 370px;
-      right: 340px;      
+      height: 150px;      
   }
 
   #cloud-graph {
-    position: fixed;
       width: 150px;
       height: 150px;
-      top: 220px;
-      right: 160px;
   }
 
   #wind-graph {
-    position: fixed;
       width: 150px;
       height: 150px;
-      top: 370px;
-      right: 160px;
   }
 
 /* Temp format */
@@ -113,7 +98,7 @@ h1 {
     margin: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-    padding-right: 30px
+    padding-right: 30px;
 }
 
 
@@ -124,6 +109,13 @@ h1 {
   }
 
 /* Comparisons format */
+
+#comp {
+  background-color: #FFFFFF;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 230px;
+}
 
 
 #comp_temp_graph{
@@ -174,67 +166,16 @@ tr:nth-child(even) {
 
 @media (max-width: 800px) {
 
-  body {
-    background-color: white;
-}
-
-  .nav {
-    visibility: hidden;
+  .container-fluid{
+    background: #16A085;
   }
 
-  #nav-select {
-    visibility: visible;
-  }
+ .nav li {
+   visibility: hidden;
+ }
 
-  #container-fluid {
-    background-color: #16A085
-  }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  h2{
-    font-size: 15px;
-  }
-
-  summary {
-    font-size: 8px;
-  }
-  
-  #vis-lat {
-    background-color: #FFFFFF;
-    display: inline-block;
-    margin: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px
-  }
-
-  #temp-graph {
-    width: 100px;
-    height: 100px;
-  }
-
-#hum-graph {
-    width: 100px;
-    height: 100px;
-     
-}
-
-#cloud-graph {
-    width: 100px;
-    height: 100px;
-    top: 220px;
-    right: 160px;
-}
-
-#wind-graph {
-  position: fixed;
-    width: 120px;
-    height: 120px;
-    top: 20px;
-    left: 20px;
-}
+ #comp {
+   width: 100%;
+ }
 
 }
